@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:  "Lato", serif;
+    color: white;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #111;
+}
+.logo a img{
+    height: 30px;
+    cursor: pointer;
+    
+}
+.logo img:hover{
+    scale: 1.01;
+}
+.search img{
+    width: 25px;
+    padding: 5px;
+    background-color:transparent;
+    margin-left: 20px;
+    size: 1.02rem;
+}
+.search{
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    background-color:#8e8e8e;
+    padding: 10px ;
+    width: 220px;
+}
+.search input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+.search input::placeholder{
+    color: #b4b4b4;
+    opacity: 1;
+    font-size: 1.02rem;
+}
+header .txt{
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    border-bottom: 3px solid green;
+    padding-bottom: -10px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    cursor: pointer;
+}
+header .txt:hover{
+    border-bottom: none;
+    border-bottom: 1px solid green;
+    scale: 1.1;
+}
+header{
+    background-color: #111;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    padding-inline: 20px;
+}
+.uhead{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+.uhead a{
+    text-decoration: none;
+}
+.uhead a div:hover{
+    color:rgb(88, 169, 88);
+}
+.airs{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    background-color: #111;
+    margin-bottom: 30px;
+}
+.airs .air{
+    margin-top: 50px;
+    background-color: rgb(88, 169, 88);
+    width: 500px;
+    height: 500px;
+    border-radius: 100%;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.airs .air:hover{
+    scale: 1.02;
+}
+.airs .air img{
+    height: 550px;
+    width: auto;
+    background-color: transparent ;
+    padding: 40px;
+}
+.airs .priceair{
+    height: 50%;
+    border: 1pt solid white;
+    margin-right: 90px;
+    font-size: 3rem;
+    padding: 25px;
+    color:rgb(88, 169, 88);
+    cursor: pointer;
+    margin-top: 30px;
+    transition: 0.1s;
+}
+.airs .priceair:hover{
+scale: 1.01;
+}
+.airs .season{
+font-size: 3.5rem;
+font-weight: 500;
+transition: 0.2s;
+cursor: pointer;
+}
+.airs .season:hover{
+    scale: 1.01;
+}
+.airs  .season .up{
+    color: white;
+}
+.airs .season button{
+    background-color: black;
+    outline: none;
+    border: none;
+    font-size: 3rem;
+    margin-left: 200px;
+    margin-top: 30px;
+    font-weight: 600;
+    border: 1px solid white ;
+    cursor: pointer;
+    padding: 10px;
+    transition: 0.2s;
+}
+.airs .season button:hover{
+    scale: 1.03;
+}
+.container{
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+}
+.container .imgs{
+    height: 200px;
+    margin: 30px 0px 0px 0px;
+    text-align: center;
+    width: 190px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.container .imgs:hover{
+    scale: 1.01;
+}
+.container .imgs img{
+    width: 80px;
+    margin-top: 5px;
+}
+.container .imgs h3{
+    color: #111;
+    margin-top: 10px;
+}
+.container .imgs p{
+    color: #8e8e8e;
+    margin-top: 20px
+}
+.container .imgs p span{
+    display: block;
+    color: #8e8e8e;
+    margin-top: 20px
+}
+.kotch{
+    display: flex;
+    background-color:whitesmoke;
+}
+.kotch .content h1{
+font-size: 3rem;
+font-weight: 800;    
+}
+.kotch .content .price{
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-block: 20px;
+    color: rgb(93, 186, 93) ;
+}
+.kotch .content pre{
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+.kotch .content h1,p,pre{
+    color: #111;
+    background-color: transparent;
+    outline: none;
+    padding: 5px 15px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.kotch .content p button{
+    margin-inline: 3px;
+    color: #111;
+    width: 50px;
+    background-color: transparent;
+    border: 1px solid black;
+}
+.kotch .content p button:hover{
+    background-color: rgb(93, 186, 93);
+}
+.kotch .content .buy{
+    color: white;
+    background-color: black;
+    outline: none;
+    border: 1px white solid;
+    padding: 5px 15px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 75%;
+    border-radius: 20px;
+    font-size: large;
+}
+.kotch .content .buy:hover{
+    background-color: rgb(49, 49, 49);
+}
+.kotch .content{
+    height: 50%;
+    margin-top: 90px;
+    padding: 15px;
+}
+.content .bbtn{
+    margin-top: 50px;
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    border: 1px solid whitesmoke;
+    cursor: pointer;
+}
+.content .wbtn{
+    margin-top: 50px;
+    height: 30px;
+    width: 30px;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.models{
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 90px
+}
+.models .cont img{
+    width: 300px;
+    cursor: pointer;
+}
+.models .cont{
+    transition: 0.3s;
+}
+.models .cont:hover{
+    scale: 1.02;
+}
+.models .cont h1{
+    margin-block: 20px;
+    color:#111;
+    width: 200px;
+
+}
+footer{
+    padding-block: 100px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 20px;
+    text-align: center;
+}
+footer .head{
+color: #111;
+padding-bottom: 15px;
+}
+footer .col{
+    color: #b4b4b4;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+footer .col:hover{
+    color: #8e8e8e;
+}
+.media h1{
+color: #111;
+}
+.media button{
+    background-color: #111;
+    outline: none;
+    border: 1px solid whitesmoke;
+    padding: 5px;
+}
+.media input{
+    padding: 5px;
+    outline: none;
+}
+.media .follow{
+    color: #111;
+    margin-top: 20px;
+}
+.media{
+    margin-bottom: 145px;
+}
+.media .icons i{
+    color: #111;
+    padding-right: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
